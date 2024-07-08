@@ -3,93 +3,99 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+<>
+<nav className="navbar navbar-expand-lg bg-body-tertiary">
+  <div className="container-fluid">
+    <a className="navbar-brand" href="#">LOGO</a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon" />
+    </button>
+   <div className="d-flex" id="navbarSupportedContent">
+  <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+    <li className="nav-item">
+      <a className="nav-link active" aria-current="page" href="http://localhost:3001/">Home</a>
+    </li>
+    <li className="nav-item">
+    <a className="nav-link active" aria-current="page" href="https://www.facebook.com/siwat.sangkhaanan.5">About</a>
+    </li>
+    <li className="nav-item">
+    <a className="nav-link active" aria-current="page" href="#">Service</a>
+    </li>
+    <li className="nav-item">
+    <a className="nav-link active" aria-current="page" href="#">Contact</a>
+    </li>
+  </ul>
+<form className="d-flex" role="navbarSupportedContent">
+<button className="btn btn-outline-secondary" type="submit">SignIn</button>
+  <button className="btn btn-outline-secondary" type="submit">SignUp</button>
+</form>
+
+</div>
+
+  </div>
+  </nav>
+
+  <div className="container-fluid">
+      <div className="row my-2">
+      <div id="carouselExampleFade" className="carousel slide carousel-fade">
+  <div className="carousel-inner">
+    <div className="carousel-item active">
+      <img src="https://ninenic.com/download/ninenic_com/webdesign/website-builder-websitedesign-banner1.jpg" className="d-block w-100" width="600px" height="500px" />
+    </div>
+  </div>
+</div>
+
+      </div>
+        <div className="row my-2">
+<div className="col-md-4 text-center bg-link p-5">
+<div className="card" style={{width: '18rem'}}>
+  <img src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=600" className="card-img-top" width="100%"/>
+  <div className="card-body">
+    <h5 className="card-title">Card title</h5>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" className="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+<div className="col-md-4 text-center bg-link p-5 ">
+<div className="card" style={{width: '18rem'}}>
+  <img src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=600" className="card-img-top" width="100%" />
+  <div className="card-body">
+    <h5 className="card-title">Card title</h5>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" className="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+<div className="col-md-4 text-center bg-link p-5 ">
+<div className="card" style={{width: '18rem'}}>
+  <img src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=600" className="card-img-top" width="100%" />
+  <div className="card-body">
+    <h5 className="card-title">Card title</h5>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" className="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
         </div>
-      </div>
+        <div className="row my-2">
+        <div className="col-md-12 text-center bg-dark p-5 text-white">
+        <div>
+  Cover Footer for 
+  <a href="https://getbootstrap.com/" className="text-white mx-2">Bootstrap
+  </a>
+   by ,
+  <a href="https://twitter.com/mdo" className="text-white">@mdo
+  </a>
+</div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+          <div >
+          </div>
+          </div>
+        </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+    </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+</>
   );
 }
